@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.bg_color {
+    /* background: rgb(192, 189, 189); */
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.projects,
+.announcements,
+.trending {
+    margin-top: 20px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background-color: #61aeff;
+}
+
+input {
+    width: 400px;
+    border-radius: 5%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.project-card,
+.announcement-card,
+.trending-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.project-card .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons .new-btn {
+    background-color: #007BFF;
+    color: white;
+}
+
+.buttons .upload-btn,
+.buttons .share-btn {
+    background-color: #eee;
+}
+
+.aside_left {
+    float: right;
+    width: 300px;
+    gap: 10px;
+    margin-left: 10px;
+}
